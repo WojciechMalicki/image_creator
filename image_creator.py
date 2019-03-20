@@ -31,7 +31,7 @@ else:
     height = int(sys.argv[1])
     width = int(sys.argv[2])
     if len(sys.argv) == 4:
-        pathname = sys.argv[3]
+        pathname = sys.argv[3] + filename
 
 contents = []
 pixel = 0
