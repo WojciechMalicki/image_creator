@@ -107,6 +107,6 @@ venv.bak/
 .idea/workspace.xml
 
 #outpout folder
-outpout
+output
 output/**
 
