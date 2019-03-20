@@ -16,16 +16,17 @@ from random import choice as chc
 from random import randint as rint
 
 now = datetime.datetime.now()
-directory = 'output\\'
-filename = 'img_{:%d%m%Y%H%M%S}.raw'.format(now)
-pathname = directory + filename
 height = width = 600
+directory = 'output\\'
+filename = 'img_{:%d%m%Y%H%M%S}_{}x{}.raw'.format(now,width,height)
+pathname = directory + filename
+
 
 if len(sys.argv) != 3:
         print('Program wywołany z domyślnymi ustawieniami:')
         print('-obraz 600px x 600px')
         print('-obraz zostanie zapisany w katalogu {} pod nazwą {}.'.format(directory[:-1], filename))
-        print('Wywołanie z parametrami: python {} height width [pathname]'.format(sys.argv[0]))
+        print('Wywołanie z parametrami: python {} height width [path_to_folder]'.format(sys.argv[0]))
 else:
     height = int(sys.argv[1])
     width = int(sys.argv[2])
