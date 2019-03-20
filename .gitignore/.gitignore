@@ -109,4 +109,5 @@ venv.bak/
 #output folder
 output/
 output/**
+*.raw
 
